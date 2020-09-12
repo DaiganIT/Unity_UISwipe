@@ -83,7 +83,7 @@ public class SnapLevelScrollView : MonoBehaviour, IDragHandler, IEndDragHandler
 
     bool DragIsBeforeLeftEnd(int index)
     {
-        return lastScrollPosition < (positions[index] + (distance / 2));
+        return lastScrollPosition <= (positions[index] + (distance / 2));
     }
 
     bool DragIsBeforeRightEnd(int index)
